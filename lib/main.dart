@@ -12,6 +12,16 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text("Welcome to Kamadenu"),
     );
   }
 }
