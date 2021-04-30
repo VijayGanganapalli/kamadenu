@@ -8,9 +8,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Kamadenu",
       theme: ThemeData(
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.deepOrange,
       ),
       home: Home(),
     );
@@ -20,8 +21,14 @@ class App extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Welcome to Kamadenu"),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Kamadenu"),
+      ),
+      body: Center(
+        child: Text("Welcome to Kamadenu"),
+      ),
     );
   }
 }
