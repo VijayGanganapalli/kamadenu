@@ -26,8 +26,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
         title: Text("Kamadenu"),
       ),
-      body: Center(
-        child: Text("Welcome to Kamadenu"),
+      body: Text(
+        "Welcome to Kamadenu",
+        style: TextStyle(
+          fontSize: 35.0,
+          fontWeight: FontWeight.bold,
+          color: Colors.deepOrange,
+        ),
+        textAlign: TextAlign.center,
       ),
     );
   }
