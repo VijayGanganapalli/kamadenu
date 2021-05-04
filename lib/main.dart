@@ -26,22 +26,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
         title: Text("Kamadenu"),
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(color: Colors.lime[200]),
-        margin: EdgeInsets.all(20.0),
-        padding: EdgeInsets.all(20.0),
-        child: Text(
-          "Welcome to Kamadenu",
-          style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
-            color: Colors.deepOrange,
-          ),
-          textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-        ),
+      body: TextButton(
+        child: Text("Click me!"),
+        onPressed: () {},
       ),
     );
   }
