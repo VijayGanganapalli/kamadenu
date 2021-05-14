@@ -11,7 +11,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Kamadenu",
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.green,
       ),
       home: Home(),
     );
@@ -24,11 +24,20 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Kamadenu"),
+        title: Text("Home"),
       ),
-      body: TextButton(
-        child: Text("Click me!"),
-        onPressed: () {},
+      body: Center(
+        child: Container(
+          width: 100.0,
+          height: 50.0,
+          child: TextButton(
+            child: Text("Click me!"),
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text("You pressed Click me button")));
+            },
+          ),
+        ),
       ),
     );
   }
